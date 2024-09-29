@@ -4,23 +4,22 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println ( "Задача №1" );
-        int money = 0;
+        float money = 0.0f;
         int i = 0;
-        while (money <= 2459000) {
-            money += 15000;
+        while (money <= 2459000.0f) {
+            money += money * 1.01 + 15000.0f;
             i++;
             System.out.println ( "Месяц " + i + ", сумма накоплений равна " + money + "рублей" );
         }
 
         System.out.println ( "Задача №2" );
-        i = 1;
-        while (i <= 10) {
-            System.out.print ( " " + i );
+        i = 0;
+        while (i < 10) {
             i++;
+            System.out.print ( " " + i );
         }
         System.out.println ( "\n" );
-        while (i > 1) {
-            i--;
+        for (; i >= 1; i--) {
             System.out.print ( " " + i );
         }
 
